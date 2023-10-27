@@ -10,12 +10,21 @@
 
 <form action="main.php" method="post" style="text-align: center;">
   <label>
-    <input type="text" name="estrutura" placeholder="Preencha com os 36 caracteres"  style="width: 300px; text-transform: uppercase;" maxlength="36" minlength="36" pattern="[A-Za-z]+$" onkeyup="limite_textarea(this.value)">
+    <input type="text" name="estrutura" placeholder="Preencha com os 36 caracteres"  style="width: 400px; text-transform: uppercase;" maxlength="36" minlength="36" pattern="[A-Za-z]+$" onkeyup="limite_textarea(this.value)">
   </label>
   <input type="submit" value="Enviar">
   <span id="cont">36</span> Restantes <br>
 
 </form>
+<br><br>
+<div style="color:#808080; text-align: center;">
+<h3>Olá, viajante do tempo!</h3>
+<p>Você está em 2045, e este site foi desenvolvido em 2023.</p>
+<p>Como não tínhamos conhecimento das tecnologias existentes, fizemos esse sistema o mais básico possível para que ele funcione no futuro.</p>
+<p>Tivemos acesso a dados enviados por alguém do futuro, que nos informou como identificar um humano de um sigmano. Por isso, a existência desse sistema é tão essencial.</p>
+<p>Use com cautela.</p>
+</div>
+
 
 </body>
 <script>
@@ -27,5 +36,6 @@
       document.getElementById('cont').innerHTML = resto;
     }
   }
+
 </script>
 </html>

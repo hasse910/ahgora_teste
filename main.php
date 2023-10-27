@@ -13,5 +13,5 @@ $arrayEstrutura = processPostRequest();
 
 if (!empty($arrayEstrutura)) {
     $dna = new DnaService($arrayEstrutura);
-    echo $dna->getSequencia() ? "Sigmano" : "Humano";
+    echo $dna->getSequencia() ? '<br><h1 style="text-align:center">Você é Sigmano</h1>' : '<br><h1 style="text-align:center">Você é Humano</h1>';
 }
