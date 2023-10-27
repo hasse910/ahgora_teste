@@ -5,13 +5,27 @@
   <title>DNA </title>
 </head>
 <body>
-<h1 style="text-align:center">Prencha o campo a baixo para analisar seu DNA</h1>
+<h1 style="text-align:center">Preencha o campo a baixo para analisar seu DNA</h1>
 <br>
 
 <form action="main.php" method="post" style="text-align: center;">
-  <input type="text" name="estrutura" placeholder="Digite o texto"  style="width: 300px" maxlength="36" minlength="36">
+  <label>
+    <input type="text" name="estrutura" placeholder="Preencha com os 36 caracteres"  style="width: 300px; text-transform: uppercase;" maxlength="36" minlength="36" pattern="[A-Za-z]+$" onkeyup="limite_textarea(this.value)">
+  </label>
   <input type="submit" value="Enviar">
+  <span id="cont">36</span> Restantes <br>
+
 </form>
-<span style="display: flex; justify-content: center; color: #808080" >Preencha com os 36 caracteres</span>
+
 </body>
+<script>
+  function limite_textarea(valor) {
+    quant = 36;
+    total = valor.length;
+    if(total <= quant) {
+      resto = quant - total;
+      document.getElementById('cont').innerHTML = resto;
+    }
+  }
+</script>
 </html>
