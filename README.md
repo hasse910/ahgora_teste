@@ -2,6 +2,8 @@
 
 O programa analisa conforme exemplo a baixo se o DNA colocado é de humano ou sigmano. Pesquisando por toda matriz.
 
+Sabemeros se o DNA é sigmano se encontrarmos uma ou mais sequências de quatro letras iguais nas direções horizontais, verticais ou nas diagonais.
+
 exemplos da da imagens:
 Sigmano: CTGAGACTGAGCTATTGTAGAGGGCCCCTATCACTG
 Humano: ATGCGACAGTGCTTATTTAGACGGGCGTCATCACTG
